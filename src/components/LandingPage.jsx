@@ -1,16 +1,17 @@
 import React from 'react'
 import { MdOutlineArrowOutward } from "react-icons/md";
 import img from "../assets/content.jpg"
+import { motion } from 'framer-motion';
 
 const LandingPage = () => {
     return (
-        <div className='w-full h-screen pt-1'>
+        <div data-scroll data-scroll-speed="-.3" className='w-full h-screen pt-1'>
             <div className='textstructer mt-36 px-20'>
-                {["WE CREATE", "EYE-OPENING", "PRESENTATIONS"].map((item,index) => {
+                {["WE CREATE", "EYE-OPENING", "PRESENTATIONS"].map((item, index) => {
                     return (
                         <div className="masker">
                             <div className='w-fit flex items-end overflow-hidden'>
-                                {index === 1 && (<div className="mr-[1vw] w-[9.7vw] rounded-md h-[6vw] -top-[1.2vw] relative "><img className="object-cover mt-4 rounded-md" src={img}/></div>)}
+                                {index === 1 && (<div className="mr-[1vw] w-[9.7vw] rounded-md h-[6vw] -top-[1.2vw] relative "><motion.img initial={{ width: 0 }} animate={{ width: "10vw" }} transition={{ ease: [0.76, 0, 0.24, 1], duration:1.5 }} className="object-cover mt-4 rounded-md h-[11.6vh]" src={img} /></div>)}
                                 <h1 className="uppercase text-[7.5vw] leading-[7.5vw] tracking-tighter font-['Founders Grotesk X-Condensed'] font-bold">{item}</h1>
                             </div>
                         </div>

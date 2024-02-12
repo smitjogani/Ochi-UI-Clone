@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 export const Featured = () => {
@@ -9,10 +10,10 @@ export const Featured = () => {
             <div className='px-20'>
                 <div className="cards flex gap-10 mt-10">
                     <div className="cardcontainer relative w-1/2 h-[75vh]">
-                        <h1 className='absolute z-[9] left-full -translate-x-1/2 top-1/3 -translate-y-1/2 text-[#CDEA68] text-8xl leading-none tracking-tighter'>
+                        <h1 className='absolute flex overflow-hidden z-[9] left-full -translate-x-1/2 top-1/3 -translate-y-1/2 text-[#CDEA68] text-8xl leading-none tracking-tighter'>
                             {"FYDE".split('').map((item, index) => {
                                 return (
-                                    <span>{item}</span>
+                                    <span className='inline-block'>{item}</span>
                                 )
                             })}
                         </h1>
@@ -21,10 +22,10 @@ export const Featured = () => {
                         </div>
                     </div>
                     <div className="cardcontainer relative w-1/2 h-[75vh]">
-                        <h1 className='absolute z-[9] right-full translate-x-1/2 top-1/3 -translate-y-1/2 text-[#CDEA68] text-8xl leading-none tracking-tighter'>
+                        <h1 className='absolute z-[9] flex overflow-hidden right-full translate-x-1/2 top-1/3 -translate-y-1/2 text-[#CDEA68] text-8xl leading-none tracking-tighter'>
                             {"VISE".split('').map((item, index) => {
                                 return (
-                                    <span>{item}</span>
+                                    <span className='inline-block'>{item}</span>
                                 )
                             })}
                         </h1>

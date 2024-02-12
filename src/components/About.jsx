@@ -3,7 +3,7 @@ import hm from "../assets/hm.jpg"
 
 const About = () => {
     return (
-        <div className='w-full p-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl'>
+        <div  data-scroll data-scroll-section data-scroll-speed=".8"  className='w-full p-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl'>
             <h1 className='font-["Neue_Montreal"] text-[4vw] tracking-tight leading-[4.8vw]'>Ochi is a strategic partner for fast-growing tech businesses that need to raise funds,  sell proudcts, epxlain complex ideas, and hire great people
             </h1>
             <div className="flex gap-5 w-full pt-10 border-[#99AD53] border-t-[1px] mt-20">
