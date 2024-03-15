@@ -1,6 +1,6 @@
 # React + Vite
 
-Live Demo:ochi-ui.netlify.app
+Live Demo: ochi-ui.netlify.app 
 
 
 
